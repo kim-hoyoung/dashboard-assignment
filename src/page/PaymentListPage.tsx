@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
-import { useFetchPaymentsQuery } from "../hooks/usePaymentsQuery";
-import type { Payment } from "../api/PaymentApi";
+import { useFetchPaymentsQuery } from "@_hooks/usePaymentsQuery";
+import type { Payment } from "@_api/PaymentApi";
 
 const PAGE_SIZE = 10;
 

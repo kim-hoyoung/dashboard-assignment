@@ -1,4 +1,4 @@
-import { useMerchantModalStore } from "../../store/merchantModalStore";
+import { useMerchantModalStore } from "@_store/merchantModalStore";
 
 export default function MerchantModal() {
   const { isOpen, selectedMerchant, closeModal } = useMerchantModalStore();

@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { MerchantsDetails } from "../api/MerchantApi";
+import type { MerchantsDetails } from "@_api/MerchantApi";
 
 interface MerchantModalState {
   isOpen: boolean;

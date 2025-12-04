@@ -8,7 +8,7 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-import { useMonthlyPaymentsStats } from "../../hooks/useMonthlyPaymentsStats";
+import { useMonthlyPaymentsStats } from "@_hooks/useMonthlyPaymentsStats";
 
 ChartJS.register(
   CategoryScale,

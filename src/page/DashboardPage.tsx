@@ -1,8 +1,8 @@
-import KPICard from "../components/dashboard/KPICard";
-import MonthlyPaymentChart from "../components/dashboard/MonthlyPaymentChart";
-import TopMerchantChart from "../components/dashboard/TopMerchantChart";
-import { useFetchMerchantsDetailQuery } from "../hooks/useMerchantsQuery";
-import { useFetchPaymentsQuery } from "../hooks/usePaymentsQuery";
+import KPICard from "@_components/dashboard/KPICard";
+import MonthlyPaymentChart from "@_components/dashboard/MonthlyPaymentChart";
+import TopMerchantChart from "@_components/dashboard/TopMerchantChart";
+import { useFetchMerchantsDetailQuery } from "@_hooks/useMerchantsQuery";
+import { useFetchPaymentsQuery } from "@_hooks/usePaymentsQuery";
 
 export default function DashboardPage() {
   // api 호출

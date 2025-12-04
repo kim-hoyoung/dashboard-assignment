@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
-import { useFetchMerchantsDetailQuery } from "../hooks/useMerchantsQuery";
-import { fetchMerchantsCode, type MerchantsDetails } from "../api/MerchantApi";
-import { useMerchantModalStore } from "../store/merchantModalStore";
+import { useFetchMerchantsDetailQuery } from "@_hooks/useMerchantsQuery";
+import { fetchMerchantsCode, type MerchantsDetails } from "@_api/MerchantApi";
+import { useMerchantModalStore } from "@_store/merchantModalStore";
 
 const PAGE_SIZE = 10;
 

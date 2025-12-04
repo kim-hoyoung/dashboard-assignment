@@ -1,4 +1,4 @@
-import { type KPICardProps } from "../../types/dashboard";
+import { type KPICardProps } from "@_types/dashboard";
 
 export default function KPICard({
   totalMerchants,

@@ -1,11 +1,11 @@
 import "./App.css";
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
-import DashboardPage from "./page/DashboardPage";
-import DefaultLayout from "./components/layout/DefaultLayout";
-import MerchantList from "./page/MerchantListPage";
-import PaymentList from "./page/PaymentListPage";
-import MerchantModal from "./components/Common/MerchantModal";
+import DashboardPage from "@_page/DashboardPage";
+import DefaultLayout from "@_components/layout/DefaultLayout";
+import MerchantList from "@_page/MerchantListPage";
+import PaymentList from "@_page/PaymentListPage";
+import MerchantModal from "@_components/Common/MerchantModal";
 
 function App() {
   return (

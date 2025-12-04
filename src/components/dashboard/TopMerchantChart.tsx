@@ -7,7 +7,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import { useTopMerchantsStats } from "../../hooks/useTopMerchantsStats";
+import { useTopMerchantsStats } from "@_hooks/useTopMerchantsStats";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
