@@ -95,7 +95,7 @@ export default function MerchanListPage() {
             value={searchCode}
             onChange={(e) => handleChangeSearch(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSearchSubmit()}
-            placeholder="가맹점 코드 입력"
+            placeholder="가맹점 코드를 입력하시고 Enter를 눌러주세요."
             className="w-full text-sm outline-none bg-transparent"
           />
         </div>
