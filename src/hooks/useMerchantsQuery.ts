@@ -17,7 +17,7 @@ export function useMerchantsQuery(enabled: boolean = true) {
 }
 
 // 가맹점 상세 조회 쿼리
-export function useFetchMerchantsDetail(enabled: boolean = true) {
+export function useFetchMerchantsDetailQuery(enabled: boolean = true) {
   return useQuery<MerchantsDetails[], Error>({
     queryKey: ["merchants", "details"],
     queryFn: fetchMerchantsDetail,
