@@ -39,7 +39,7 @@ export default function MonthlyPaymentChart() {
     useMonthlyPaymentsStats(true);
   if (isLoading) {
     return (
-      <div className="w-full px-4 py-4">
+      <div className="w-full p-4">
         <div className="bg-white rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4 text-sm text-gray-600">
           월간 거래 그래프 로딩 중...
         </div>
@@ -49,7 +49,7 @@ export default function MonthlyPaymentChart() {
 
   if (errorMessage) {
     return (
-      <div className="w-full px-4 py-4">
+      <div className="w-full p-4">
         <div className="bg-white rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4 text-sm text-red-500">
           에러: {errorMessage}
         </div>
@@ -59,7 +59,7 @@ export default function MonthlyPaymentChart() {
 
   if (monthlyStats.length === 0) {
     return (
-      <div className="w-full px-4 py-4">
+      <div className="w-full p-4">
         <div className="bg-white rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4 text-sm text-gray-500">
           월간 거래 데이터가 없습니다.
         </div>
@@ -161,7 +161,7 @@ export default function MonthlyPaymentChart() {
     },
   };
   return (
-    <div className="w-full px-4 py-4">
+    <div className="w-full p-4">
       <div className="bg-white rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4">
         <h2 className="text-lg font-semibold mb-4 text-gray-800">
           월간 거래 추이
