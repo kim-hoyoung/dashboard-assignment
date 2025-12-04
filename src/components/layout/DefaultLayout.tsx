@@ -6,7 +6,7 @@ export default function DefaultLayout() {
   return (
     // 사이드바
     <div className="w-full h-screen flex">
-      <aside className="w-64">
+      <aside className="w-64 shrink-0">
         <Sidebar />
       </aside>
 

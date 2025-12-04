@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <div className="w-full">
-      <div className="p-3 text-left font-medium">{title}</div>
+      <div className="p-3 px-8 text-left font-medium">{title}</div>
 
       <hr className="w-full border-[#919191] border" />
     </div>

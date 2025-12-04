@@ -31,17 +31,15 @@ export default function Sidebar() {
 
   return (
     <aside
-      className="
-        z-1000
-        flex h-screen w-56 flex-col items-center
+      className="fixed
+        flex h-full w-64 flex-col items-center
         bg-white p-5
         shadow-[0_2px_10px_rgba(0,0,0,0.1)]
         transition-[width] duration-300 ease-in-out
-        md:w-64
       "
     >
       {/* 메뉴 + 홈 버튼 컨테이너 */}
-      <div className="flex h-[80%] w-full flex-col justify-between mt-20">
+      <div className="flex h-full w-full flex-col justify-between mt-20">
         {/* 메뉴 리스트 */}
         <div className="flex flex-col gap-4">
           {menuItems.map((item) => {
