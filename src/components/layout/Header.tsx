@@ -9,11 +9,15 @@ const TITLE: Record<string, string> = {
 export default function Header() {
   const location = useLocation();
   const title = TITLE[location.pathname] ?? "TITLE";
+  const name = "김호영";
 
   return (
     <div className="w-full">
-      <div className="p-3 px-8 text-left font-medium">
+      <div className="flex justify-between p-3 px-8 text-left font-medium text-gray-800 ">
         <h1>{title}</h1>
+        <h1>
+          관리자 : <span className="text-blue-600 font-semibold">{name}</span>
+        </h1>
       </div>
 
       <hr className="w-full border-[#919191] border" />

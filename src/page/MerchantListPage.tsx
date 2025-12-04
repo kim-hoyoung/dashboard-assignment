@@ -15,16 +15,15 @@ export default function MerchanListPage() {
   // 전체 가맹점 상세 목록 조회
   const { data, isLoading, error } = useFetchMerchantsDetailQuery(true);
 
-  // API 응답이 없을 수도 있으니 안전하게 처리
-  const merchants: MerchantsDetails[] = data ?? [];
-
   // 검색어로 1차 필터링 (가맹점 코드 기준)
   const filteredMerchants = useMemo(() => {
+    // API 응답이 없을 수도 있으니 안전하게 처리
+    const merchants: MerchantsDetails[] = data ?? [];
     if (!searchCode.trim()) return merchants;
 
     const keyword = searchCode.trim().toLowerCase();
     return merchants.filter((m) => m.mchtCode.toLowerCase().includes(keyword));
-  }, [merchants, searchCode]);
+  }, [data, searchCode]);
 
   // 페이지네이션용 2차 슬라이싱
   const totalPages =
@@ -124,7 +123,7 @@ export default function MerchanListPage() {
           <tbody>
             {pagedMerchants.length === 0 ? (
               <tr>
-                <td colSpan={7} className="py-6 px-4 text-center text-gray-400">
+                <td colSpan={8} className="py-6 px-4 text-center text-gray-400">
                   표시할 가맹점이 없습니다.
                 </td>
               </tr>
