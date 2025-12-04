@@ -16,7 +16,7 @@ export default function TopMerchantChart() {
 
   if (isLoading) {
     return (
-      <div className="w-full px-4 py-4">
+      <div className="w-full p-4">
         <div className="bg-white rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4 text-sm text-gray-600">
           가맹점 Top 10 그래프 로딩 중...
         </div>
@@ -26,7 +26,7 @@ export default function TopMerchantChart() {
 
   if (errorMessage) {
     return (
-      <div className="w-full px-4 py-4">
+      <div className="w-full p-4">
         <div className="bg-white rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4 text-sm text-red-500">
           에러: {errorMessage}
         </div>
@@ -36,7 +36,7 @@ export default function TopMerchantChart() {
 
   if (!topMerchants || topMerchants.length === 0) {
     return (
-      <div className="w-full px-4 py-4">
+      <div className="w-full p-4">
         <div className="bg-white rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4 text-sm text-gray-500">
           가맹점 데이터가 없습니다.
         </div>
@@ -113,7 +113,7 @@ export default function TopMerchantChart() {
     },
   };
   return (
-    <div className="w-full px-4 py-4">
+    <div className="w-full p-4">
       <div className="bg-white rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] p-4">
         <h2 className="text-lg font-semibold mb-4 text-gray-800">
           가맹점별 Top 10 거래 금액
