@@ -8,7 +8,7 @@ type MenuItem = {
 const menuItems: MenuItem[] = [
   { label: "대시보드", route: "/" },
   { label: "가맹점 정보", route: "/merchantlist" },
-  { label: "거래내역 리스트", route: "paymentlist" },
+  { label: "거래내역 리스트", route: "/paymentlist" },
 ];
 
 export default function Sidebar() {
@@ -31,13 +31,17 @@ export default function Sidebar() {
 
   return (
     <aside
-      className="fixed
+      className="fixed z-1000
         flex h-full w-64 flex-col items-center
         bg-white p-5
         shadow-[0_2px_10px_rgba(0,0,0,0.1)]
         transition-[width] duration-300 ease-in-out
       "
     >
+      <div className="flex flex-col items-center mt-4">
+        <img src="/logo.png" alt="회사 로고" className="w-32" />
+        <h1 className="text-2xl font-bold text-blue-400">(주)올페이즈</h1>
+      </div>
       {/* 메뉴 + 홈 버튼 컨테이너 */}
       <div className="flex h-full w-full flex-col justify-between mt-20">
         {/* 메뉴 리스트 */}
