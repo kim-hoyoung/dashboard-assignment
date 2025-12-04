@@ -29,7 +29,7 @@ npm install
 # 2. 환경변수를 설정해 주세요
 API Base URL은 .env 파일로 관리하였습니다. 현재 git ignore로 인해 해당 파일을 추가해 주세요.
 환경 변수는 const baseURL = import.meta.env.VITE_API_BASE_URL; 로 관리됩니다.
-
+`VITE_API_BASE_URL=https://recruit.paysbypays.com/`
 # 3. 개발 서버 실행
 npm run dev
 ```
