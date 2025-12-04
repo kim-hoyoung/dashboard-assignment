@@ -1,5 +1,6 @@
 import KPICard from "../components/dashboard/KPICard";
 import MonthlyPaymentChart from "../components/dashboard/MonthlyPaymentChart";
+import TopMerchantChart from "../components/dashboard/TopMerchantChart";
 import { useFetchMerchantsDetailQuery } from "../hooks/useMerchantsQuery";
 import { useFetchPaymentsQuery } from "../hooks/usePaymentsQuery";
 
@@ -60,6 +61,7 @@ export default function DashboardPage() {
         errorMessage={errorMessage}
       />
       <MonthlyPaymentChart />
+      <TopMerchantChart />
     </div>
   );
 }
