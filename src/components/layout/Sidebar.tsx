@@ -16,16 +16,16 @@ export default function Sidebar() {
   const location = useLocation();
 
   const navigateTo = (route: string) => {
-    navigate(`/${route}`);
+    navigate(route);
   };
 
   const isActive = (route: string) => {
-    return location.pathname === `/${route}`;
+    return location.pathname === route;
   };
 
   // 기본 버튼
   const baseItemClass =
-    "relative w-full rounded-lg bg-white py-2.5 text-center text-5 text-[#878787] shadow-md transition-colors duration-300 cursor-pointer hover:bg-[#2579F8] hover:text-white";
+    "relative w-full rounded-lg py-2.5 text-center text-5 text-[#878787] shadow-md transition-colors duration-300 cursor-pointer hover:bg-[#2579F8] hover:text-white";
   // 엑티브 버튼
   const activeItemClass = "bg-[#2579F8] text-white font-bold text-5";
 
@@ -57,7 +57,7 @@ export default function Sidebar() {
                   <span
                     className="
                       absolute left-2 top-1/2
-                      h-[22px] w-[7px]
+                      h-6 w-2
                       -translate-y-1/2
                       rounded-full bg-neutral-100
                     "
